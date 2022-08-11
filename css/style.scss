@@ -826,7 +826,7 @@ body.appear {
   }
 }
 
-/* ==========フッター========== */
+/* ========== フッター ========== */
 .footer {
   width: 100vw;
   height: 50px;
@@ -835,6 +835,14 @@ body.appear {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & > a {
+    margin-left: 30px;
+
+    & > img {
+      width: 60%;
+    }
+  }
 }
 
 /* ==================== コンタクトページ ==================== */

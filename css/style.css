@@ -769,7 +769,7 @@ body.appear .header, body.appear .hero, body.appear .about, body.appear .works, 
   margin-bottom: 5px;
 }
 
-/* ==========フッター========== */
+/* ========== フッター ========== */
 .footer {
   width: 100vw;
   height: 50px;
@@ -778,6 +778,12 @@ body.appear .header, body.appear .hero, body.appear .about, body.appear .works, 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer > a {
+  margin-left: 30px;
+}
+.footer > a > img {
+  width: 60%;
 }
 
 /* ==================== コンタクトページ ==================== */
