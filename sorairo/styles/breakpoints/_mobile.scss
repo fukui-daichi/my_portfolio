@@ -1,0 +1,158 @@
+@use "../modules/variables" as var;
+@media (max-width: 480px) {
+
+  #splash-logo {
+    font-size: 5vw;
+  }
+
+  .works {
+
+    &__contents {
+      display: block;
+
+      & > figure {
+        width: 100%;
+        margin-bottom: 8vw;
+
+        & > figcaption {
+          padding: 1.5vw 2vw;
+          font-size: 3vw;
+          font-weight: normal;
+          bottom: -3vw;
+
+          &::before {
+            width: 10vw;
+            border-top: solid 0.3vw #000;
+            margin-right: 3vw;
+          }
+        }
+
+        &:nth-last-of-type(-n+2) {
+          margin-bottom: 8vw;
+        }
+
+        &:last-of-type {
+          margin-bottom: 10vw;
+        }
+      }
+    }
+
+    &__btn {
+      width: 50vw;
+      padding: 2.5vw 0;
+      font-size: 3vw;
+    }
+  }
+
+  .service {
+
+    &__inner {
+      padding: 10vw 15vw;
+    }
+
+    &__title {
+      border-bottom: 0.5vw solid;
+      font-size: 4.5vw;
+      margin-bottom: 5vw;
+
+      & > span {
+        margin-left: 3vw;
+        font-size: 2vw;
+      }
+    }
+
+    &__li {
+      width: 49%;
+
+      &:nth-child(3) {
+        width: 98%;
+      }
+
+      & .icons {
+        font-size: 6vw;
+      }
+
+      & .title {
+        font-size: 3vw;
+      }
+
+      & .text {
+        font-size: 2.7vw;
+      }
+    }
+  }
+
+  .users {
+
+    &__ul {
+      display: block;
+    }
+
+    &__li {
+      width: 100%;
+      margin-bottom: 5vw;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &__texts {
+      padding: 3vw 5vw;
+
+      &__title {
+        font-size: 4vw;
+      }
+
+      &__text {
+        line-height: 4.5vw;
+        font-size: 2.7vw;
+      }
+
+      &__company {
+        font-size: 3vw;
+
+        & > i {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+
+  .faq {
+
+    &__questions {
+
+      & > dl {
+
+        & > dt {
+          padding: 0 0 1vw 5vw;
+        }
+
+        & > dd {
+          font-weight: normal;
+          line-height: 3.7vw;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 10vw 5vw;
+    display: block;
+
+    &__about {
+      width: 100%;
+      margin-bottom: 5vw;
+
+      & > p {
+        font-size: 3.5vw;
+        margin-bottom: 1.5vw;
+      }
+    }
+
+    & .gmap {
+      width: 100%;
+    }
+  }
+}

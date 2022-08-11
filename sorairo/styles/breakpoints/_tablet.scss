@@ -1,0 +1,88 @@
+@media (max-width: 768px) {
+  .header {
+
+    &__nav {
+      width: 100vw;
+
+      & > a {
+        width: 15vw;
+        margin-left: 1vw;
+      }
+    }
+
+    &__li {
+      width: 11.5vw;
+
+      & > a {
+        height: 8vw;
+        padding: 20% 5%;
+      }
+    }
+  }
+
+  .top {
+
+    &__inner {
+      width: 70vw;
+    }
+
+    &__title {
+      font-size: 7vw;
+    }
+  }
+
+  .contact {
+
+    &__mail {
+
+      & th {
+        width: 40%;
+      }
+
+      & td {
+        width: 60%;
+
+        & select {
+          width: 80%;
+        }
+
+        & input {
+          width: 100%;
+
+          &[type="email"] {
+            width: 100%;
+          }
+        }
+
+        & .period {
+
+          &__inner {
+            width: 50%;
+
+            &:nth-last-of-type(-n+2) {
+              margin-bottom: 3%;
+            }
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: block;
+
+    &__about {
+      width: auto;
+      margin-bottom: 3vw;
+    }
+
+    & .gmap {
+      width: auto;
+      height: 350px;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+/* =====全ページ共通===== */
+* {
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "ヒラギノ明朝 ProN", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  color: #707070;
+}
+.btn {
+  height: 5rem;
+  width: 17.5rem;
+  background-color: #E6F5F8;
+  border-radius: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 5rem;
+}
+
+/* =====ヘッダー===== */
+#header {
+  height: 7rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+#header img {
+  margin: 0.5rem 0 0 3rem;
+}
+.header-content {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  margin: 0 1.5rem;
+}
+nav ul .btn{
+  margin: 0 3rem 0 1.5rem;
+}
+
+/* =====メイン===== */
+main {
+  padding-top: 7rem;
+}
+
+/* =====トップ===== */
+#top {
+  height: calc(100vh - 7rem);
+  width: 100vw;
+  background-image: url(../images/top_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#top h1 {
+  position: absolute;
+  top: 6.4%;
+  left: 8.4%;
+  font-size: 5rem;
+  line-height: 10rem;
+}
+#top p {
+  position: absolute;
+  top: 55.6%;
+  left: 8.4%;
+  font-size: 2.5rem;
+  line-height: 5.5rem;
+}
+
+/* =====当院について・診療科目===== */
+.content-inner {
+  width: 42.4rem;
+  padding: 5rem 2.6rem 5.5rem 3.8rem;
+  text-align: center;
+}
+.content-inner h2 {
+  font-size: 3.5rem;
+  margin-bottom: 7.9rem;
+}
+.content-inner p {
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+}
+.content-inner .btn {
+  margin: 5.8rem auto 0;
+}
+
+/* =====アクセス===== */
+#access {
+  margin-bottom: 5rem;
+}
+.access-inner {
+  width: 57.4rem;
+  padding: 3rem 5rem;
+}
+.access-inner h2 {
+  font-size: 3.5rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+.access-inner p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  line-height: 3.5rem;
+  text-align: center;
+}
+.access-inner p span {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+table {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+table tr td {
+  text-align: center;
+}
+tr th, tr td {
+  padding: 1rem 0;
+}
+tr:first-child th, tr:first-child td {
+  padding: 0 0 1rem 0;
+}
+tr:last-child th, tr:last-child td {
+  padding: 1rem 0 0 0;
+}
+tr th:first-child {
+  width: 19rem;
+}
+address {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+address span {
+  display: inline-block;
+  text-align: left;
+  line-height: 3rem;
+}
+
+/* =====フッター===== */
+footer {
+  height: 5rem;
+  width: 100vw;
+  background-color: #dddddd;
+  text-align: center;
+  line-height: 5rem;
+}

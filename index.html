@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" id="favicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/vendors/remodal-default-theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+
+  <!--=============JS ===============-->
+  <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Easing拡張 -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- SVGアニメーション描画 -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+  <!-- モーダルウィンドウ -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+  <!-- 3Dアニメーション描画 -->
+  <script defer src="js/vendors/three.min.js"></script>
+  <script defer src="js/vendors/vanta.globe.min.js"></script>
+  <script defer src="js/vanta.js"></script>
+  <!-- 自作JS -->
+  <script defer src="js/script.js"></script>
+
+  <title>福井大地 | DAICHI FUKUI</title>
+</head>
+
+<body>
+
+  <div id="splash">
+    <div id="splash-logo">
+      <p>Loading...</p>
+    </div><!-- /#splash-logo -->
+  </div><!-- /#splash -->
+  <div class="splashbg">
+  </div><!-- /.splashbg -->
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html"><img src="images/fukui_bold.svg" alt="ロゴ画像"></a>
+      <!-- ハンバーガーメニュー -->
+      <div class="header__openbtn"><span></span><span></span><span></span></div>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <a href="#about"><li class="header__li about-sp">ABOUT</li></a>
+          <a href="#works"><li class="header__li works-sp">WORKS</li></a>
+          <a href="contact.html"><li class="header__li">CONTACT</li></a>
+        </ul>
+      </nav>
+    </div><!-- /.header__inner -->
+  </header>
+
+  <div class="hero mb-la">
+    <svg id="mask" class="mb-md" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="623.31" height="84.7" viewBox="0 0 623.31 84.7" style="enable-background:new 0 0 623.31 84.7;" xml:space="preserve">
+      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/balboa_plus.svg" width="623.31" height="84.7" mask="url(#clipmask)"></image>
+      <mask id="clipmask" maskUnits="objectBoundingBox">
+        <path class="st0" d="M0,2.18V80.49s22,2.69,22-12.31V12.54S21.22,3.18,4.61,2.18L67,0l-9.08,84.48L76.12,0l7.7,84.48-28.91-18.85h32.89L121.5,0V84.48l60.27-56.22V10.28s-8.33-11.45-19.78,0v63.89s11,15,21,0c0,0,.3-16.28-.85-18.64S220.47,0,220.47,0V84.48l4.53-43.3h13L243.18,0V84.7L283.86,0V84.48L386.59,0l-.75,84.7,4.16-79.52h18.54l-17.26,37.72h14.73L439.9,0V72.79s10.1,18.61,21.1,0V.9l40.65-.9V83.3l8.35-48.13L524.55,0l-9.55,38.18,10.31,46.52L562.1,0V72.6s9.9,21.43,21.9,0V0h39.31V84.48"/>
+      </mask>
+    </svg>
+    <img src="images/balboa_plus_txt.svg" alt="ポートフォリオサイト">
+  </div><!-- /.hero -->
+
+  <div id="about" class="about mb-la">
+    <h1 class="about__title mb-md">ABOUT</h1>
+    <div class="about__profile">
+      <!-- <div class="about__img mb-sm"> -->
+        <img src="images/profile.webp" alt="プロフィール画像" class="about__img mb-sm">
+      <!-- </div> -->
+      <h2 class="about__name mb-sm"><ruby>福井<rt>ふくい</rt></ruby>&nbsp;&nbsp;<ruby>大地<rt>だいち</rt></ruby></h2>
+      <div class="about__text mb-md">
+        <p>
+          徳島県生まれ。京都市在住。<br>
+          前職で自社サイトの修正作業をしていた経験からWEB制作に興味を持ち、転職を決意。<br>
+          現在は、コーディングとWEBデザインを中心に学習しながら転職活動中。
+        </p>
+      </div>
+      <div class="skill mb-md">
+        <p class="skill__title">
+          SKILL<br>
+          <i class="fas fa-caret-down fa-lg"></i>
+        </p>
+        <ul>
+          <li>
+            <img src="images/html5_icon.png" alt="HTML5アイコン">
+            <span>
+              基本的なタグを使用したコーディングが可能です。
+            </span>
+            <p>HTML5</p>
+          </li>
+          <li>
+            <img src="images/css3_icon.png" alt="cssアイコン">
+            <span>
+              基本的な要素を使用した装飾が可能です。
+            </span>
+            <p>CSS3</p>
+          </li>
+          <li>
+            <img src="images/javascript_icon.png" alt="javascriptアイコン">
+            <span>
+              関数や変数を使用して動きをつけることができます。<br>
+              近年のWEBサイトには動的な要素が欠かせないと考えていますので、最も力を入れて学習しています。
+            </span>
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img src="images/wordpress_icon.png" alt="wordpressアイコン">
+            <span>
+              ダッシュボードの取り扱い、コーディングが可能です。
+            </span>
+            <p>wordpress</p>
+          </li>
+          <li>
+            <img src="images/jquery_icon.png" alt="jqueryアイコン">
+            <span>
+              基本的なコーディングが可能です。<br>
+              本ポートフォリオサイトにも複数のプラグインを使用しています。
+            </span>
+            <p>jquery</p>
+          </li>
+          <!-- <li>
+            <img src="images/github_icon.png" alt="githubアイコン">
+            <p>Github</p>
+          </li> -->
+          <li>
+            <img src="images/vscode_icon.png" alt="vscodeアイコン">
+            <span>
+              基本的な操作が可能です。<br>
+              主にテキストエディタはこちらを使用しています。
+            </span>
+            <p>VS Code</p>
+          </li>
+          <li>
+            <img src="images/adobe-dreamweaver_icon.png" alt="dreamweaverアイコン">
+            <span>
+              基本的な操作が可能です。
+            </span>
+            <p>Dreamweaver</p>
+          </li>
+          <li>
+            <img src="images/adobe-xd_icon.png" alt="xdアイコン">
+            <span>
+              基本的な操作が可能です。<br>
+              デザインカンプの作成に使用しています。
+            </span>
+            <p>XD</p>
+          </li>
+          <li>
+            <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+            <span>
+              基本的な操作が可能です。<br>
+              特にグラデーションメッシュに興味があります。
+            </span>
+            <p>Illustrator</p>
+          </li>
+          <li>
+            <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+            <span>
+              基本的な操作が可能です。
+            </span>
+            <p>Photoshop</p>
+          </li>
+          <li>
+            <img src="images/adobe-indesign_icon.png" alt="indesignアイコン">
+            <span>
+              基本的な操作が可能です。
+            </span>
+            <p>Indesign</p>
+          </li>
+        </ul>
+      </div><!-- /.skill -->
+    </div><!-- /.about__profile -->
+    <div class="about__history">
+      <h2>
+        Personal history, <span>1993-2022</span><br>
+        <i class="fas fa-caret-down fa-lg"></i>
+      </h2>
+      <div class="flex-parent">
+        <div class="input-flex-container">
+          <div class="input">
+            <span data-year="1993.9" data-info="徳島県で生まれる"></span>
+          </div>
+          <div class="input">
+            <span data-year="2012.4" data-info="大阪に就職"></span>
+          </div>
+          <div class="input active">
+            <span data-year="2015.7" data-info="教習指導員に転職"></span>
+          </div>
+          <div class="input">
+            <span data-year="2019.4" data-info="京都へ移住"></span>
+          </div>
+          <div class="input">
+            <span data-year="2021.3" data-info="社内SEに転職"></span>
+          </div>
+          <div class="input">
+            <span data-year="2022" data-info="現在"></span>
+          </div>
+        </div><!-- /.input-flex-container -->
+        <div class="description-flex-container">
+          <p>
+            徳島県の田舎生まれで、高校卒業までの18年間を過ごしました。<br>
+            「田舎は静かで過ごしやすそう」とよく言われますが、夏はカエルの鳴き声で眠れません。
+          </p>
+          <p>
+            祖父に憧れ、高校卒業と同時に大阪の食品管理に就職しました。<br>
+            その為に高校在学中に、冷凍機械保安責任者等の資格を取得しました。
+          </p>
+          <p class="active">
+            身内の交通事故をきっかけに初心運転者教育に興味を持ち、教習指導員に転職しました。<br>
+            その後、徳島県と京都府で約5年間従事していました。
+          </p>
+          <p>
+            京都府へ移住し、二輪専門の指導員として従事していました。
+          </p>
+          <p>
+            コロナウイルスの影響を受け仕事が激減した為、独学でプログラミングを学習し、SEに転職しました。
+          </p>
+          <p>
+            WEB制作を仕事にするため、転職活動中です。
+          </p>
+        </div><!-- /.description-flex-container -->
+      </div><!-- /.flex-parent -->
+    </div><!-- /.about__history -->
+  </div><!-- /#about -->
+
+  <div id="works" class="works mb-md">
+    <h1 class="works__title mb-md">WORKS</h1>
+    <div class="works__tab-works">
+      <ul class="tab__container">
+        <li class="tab current">WEB</li>
+        <li class="tab">DTP</li>
+        <li class="tab">画像編集</li>
+        <!-- <li class="tab">DTP</li> -->
+      </ul>
+      <div class="works__container">
+        <!-- WEB -->
+        <ul class="works__inner">
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="sorairo">
+              <img src="images/works/sorairo.jpg" alt="ソライロ">
+            </div>
+            <div class="works__text-block">
+              <h2>ソライロ</h2>
+              <p>オリジナルHP</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="sorairo" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">ソライロ</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン/コーディング</dd>
+                    <dt>制作時間</dt>
+                    <dd>5H/15H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/vscode_icon.png" alt="vscodeアイコン">
+                      <img src="images/adobe-xd_icon.png" alt="xdアイコン">
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    店舗内装業者のHPをイメージして作成しました。<br>
+                    リキッドレイアウトに挑戦し、どのデバイスでも表示が崩れないようブレイクポイントを3つ設定しました。<br>
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    単位（vw、vh、%やcalc、clampでの計算）の使い方やユーザビリティを考慮したフォントサイズの選び方などを学習出来ました。
+                  </p>
+                  <button class="btn"><a href="sorairo/index.html" target="_blank">ページを開く</a></button>
+                </div><!-- /.text__container -->
+                <div class="contents">
+                  <p><i class="fas fa-desktop"></i><span>デザインカンプ</span>-PC-</p>
+                  <img src="images/works/sorairo_DC.jpg" alt="ソライロ">
+                </div><!-- /.contents -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="stay-world">
+              <img src="images/works/stay-world-sm.jpg" alt="ステイワールド">
+            </div>
+            <div class="works__text-block">
+              <h2>Stay World</h2>
+              <p>Udemy講座</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="stay-world" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">Stay World</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>コーディング</dd>
+                    <dt>制作時間</dt>
+                    <dd>30H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/vscode_icon.png" alt="vscodeアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    Udemyの講座を参考に作成しました。<br>
+                    JavaScriptについて深く学習したかったので、本講座を購入しました。<br>
+                    CSSのアニメーション設定から、Javascriptの応用まで幅広く学習できました。
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    Javascriptの関数や変数の使い方については不慣れな部分がありますので、これからさらに学習を深めていきたいと思います。
+                  </p>
+                  <button class="btn"><a href="stay-world/index.html" target="_blank">ページを開く</a></button>
+                </div><!-- /.text__container -->
+                <div class="contents">
+                  <p><i class="fas fa-desktop"></i><span>ページ全体図</span></p>
+                  <img src="images/works/stay-world.jpg" alt="ステイワールド">
+                </div><!-- /.contents -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="vegetables">
+              <img src="images/works/vegetables.jpg" alt="野菜通販サイト">
+            </div>
+            <div class="works__text-block">
+              <h2>産地直送通販　-ベジチョク-</h2>
+              <p>オリジナルLP</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="vegetables" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">産地直送通販　-ベジチョク-</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン/コーディング</dd>
+                    <dt>制作時間</dt>
+                    <dd>8H/8H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/vscode_icon.png" alt="vscodeアイコン">
+                      <img src="images/adobe-xd_icon.png" alt="xdアイコン">
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    野菜の通販サイトのランディングページを作成しました。<br>
+                    また、コーディングに関しては「DartSass」の記法を学習し取り入れました。
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    デザインカンプ作成後、コーディング作業に取り掛かりましたが、実機の画面ですると文字が小さすぎたり画像が大きすぎたりと、イメージと異なる部分があったので途中でデザインを変更しました。
+                  </p>
+                  <button class="btn"><a href="vegetable_order/index.html" target="_blank">ページを開く</a></button>
+                </div><!-- /.text__container -->
+                <div class="contents">
+                  <p><i class="fas fa-desktop"></i><span>デザインカンプ</span>-PC-</p>
+                  <img src="images/works/vegetables_pc.jpg" alt="野菜通販サイト" class="mb-md">
+                  <p><i class="fas fa-mobile-alt"></i><span>デザインカンプ</span>-Mobile-</p>
+                  <img src="images/works/vegetables_mobole.jpg" alt="野菜通販サイト">
+                </div><!-- /.contents -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="morris_dental_clinic">
+              <img src="images/works/morris_dental_clinic.jpg" alt="モーリス歯科医院">
+            </div>
+            <div class="works__text-block">
+              <h2>モーリス歯科医院</h2>
+              <p>オリジナルサイト</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="morris_dental_clinic" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">モーリス歯科医院</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン/コーディング</dd>
+                    <dt>制作時間</dt>
+                    <dd>8H/8H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-dreamweaver_icon.png" alt="dreamweaverアイコン">
+                      <img src="images/adobe-xd_icon.png" alt="xdアイコン">
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>レスポンシブ未対応</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    歯科医院のホームページをイメージして作成しました。<br>
+                    閲覧者に不安を与えないように医師のイメージをメインに配置し、さらに落ち着いた配色を意識しました。
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    デザインカンプ作成後、コーディングしてみると要素のサイズが当てはまらなかったり、デザイン通りに配置することに苦労しました。<br>
+                    なのでデザインカンプの作成段階で、どのようにコーディングするのか想定することが大切だと感じました。
+                  </p>
+                  <button class="btn"><a href="morris-dental-clinic/index.html" target="_blank">ページを開く</a></button>
+                </div><!-- /.text__container -->
+                <div class="contents">
+                  <p><i class="fas fa-desktop"></i><span>デザインカンプ</span>-PC-</p>
+                  <img src="images/works/morris_dental_clinic_DC.jpg" alt="モーリス歯科医院デザインカンプ">
+                </div><!-- /.contents -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="summer_travel">
+              <img src="images/works/summer_travel.jpg" alt="夏めぐり">
+            </div>
+            <div class="works__text-block">
+              <h2>夏めぐり</h2>
+              <p>オリジナルLP</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="summer_travel" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">夏めぐり</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン/コーディング</dd>
+                    <dt>制作時間</dt>
+                    <dd>10H/15H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/vscode_icon.png" alt="vscodeアイコン">
+                      <img src="images/adobe-xd_icon.png" alt="xdアイコン">
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>レスポンシブ対応済</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    夏の旅行をコンセプトに作成しました。<br>
+                    涼しげなイメージの画像を配置し、Javascriptで動きを持たせました。
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    このサイトのコーディングにあたり、SCSSとJavascriptを学習し実装しました。
+                  </p>
+                  <button class="btn" data-remodal-target="summer_travel_banner">バナーを見る</button>
+                  <button class="btn"><a href="summer-travel/index.html" target="_blank">ページを開く</a></button>
+                </div><!-- /.text__container -->
+                <div class="contents">
+                  <p><i class="fas fa-desktop"></i><span>デザインカンプ</span>-PC-</p>
+                  <img src="images/works/summer_travel_DC.jpg" alt="夏めぐりデザインカンプ">
+                </div><!-- /.contents -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="summer_sale_banner">
+              <img src="images/works/summer_sale_910_210.jpg" alt="サマーセール">
+            </div>
+            <div class="works__text-block">
+              <h2>サマーセール</h2>
+              <p>オリジナルバナー</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="summer_sale_banner" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">サマーセール</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン</dd>
+                    <dt>制作時間</dt>
+                    <dd>5H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    20代〜30代の女性をターゲットに想定し、夏用アイテムのバナーを作成しました。<br>
+                    バナーサイズに合わせて画像の配置を変更したり、フォントの調整に苦労しました。
+                  </p>
+                </div><!-- /.text__container -->
+                <div class="banners">
+                  <p>250<i class="fas fa-times"></i>140</p>
+                  <img src="images/works/summer_sale_250_140.jpg" alt="サマーセールバナー画像（小）" class="mb-sm">
+                  <p>300<i class="fas fa-times"></i>250</p>
+                  <img src="images/works/summer_sale_300_250.jpg" alt="サマーセールバナー画像（中）" class="mb-sm">
+                  <p>910<i class="fas fa-times"></i>210</p>
+                  <img src="images/works/summer_sale_910_210.jpg" alt="サマーセールバナー画像（大）" class="w-100">
+                </div><!-- /.banners -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="summer_travel_banner">
+              <img src="images/works/summer_travel_910_210.jpg" alt="夏めぐり">
+            </div>
+            <div class="works__text-block">
+              <h2>夏めぐり</h2>
+              <p>オリジナルバナー</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="summer_travel_banner" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">夏めぐり</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン</dd>
+                    <dt>制作時間</dt>
+                    <dd>7H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    夏の旅行をコンセプトに作成しました。<br>
+                    バナーのサイズによって表現できる情報量が限られている為、より魅力的に見せられるように考慮して配置しました。
+                  </p>
+                  <button class="btn" data-remodal-target="summer_travel">LPを見る</button>
+                </div><!-- /.text__container -->
+                <div class="banners">
+                  <p>250<i class="fas fa-times"></i>140</p>
+                  <img src="images/works/summer_travel_250_140.jpg" alt="サマーセールバナー画像（小）" class="mb-sm">
+                  <p>300<i class="fas fa-times"></i>250</p>
+                  <img src="images/works/summer_travel_300_250.jpg" alt="サマーセールバナー画像（中）" class="mb-sm">
+                  <p>910<i class="fas fa-times"></i>210</p>
+                  <img src="images/works/summer_travel_910_210.jpg" alt="サマーセールバナー画像（大）" class="w-100">
+                </div><!-- /.banners -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+        </ul>
+
+        <!-- DTP -->
+        <ul class="works__inner">
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="morris-flyer01">
+              <img src="images/works/morris-flyer01-sm.jpg" alt="A4フライヤー01（小）">
+            </div>
+            <div class="works__text-block">
+              <h2>訓練受講希望者用フライヤー</h2>
+              <p>オリジナルフライヤー</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="morris-flyer01" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">訓練受講希望者用フライヤー</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン</dd>
+                    <dt>制作時間</dt>
+                    <dd>16H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    求職者支援訓練の受講希望者用のフライヤーを作成しました。<br>
+                    ベースカラーには安心感を与えるため、緑色を採用しています。<br>
+                    また訓練の流れに合わせて成長する過程を人類の進化で表現しました。
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    初めに制作したフライヤーでしたので、作成前にデザインの4原則や色の影響などについて学習しました。
+                  </p>
+                </div><!-- /.text__container -->
+                <div class="flyers">
+                  <img src="images/works/morris-flyer01.jpg" alt="A4フライヤー01">
+                </div><!-- /.flyers -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="morris-flyer02">
+              <img src="images/works/morris_flyer02_sm.jpg" alt="A4フライヤー02（小）">
+            </div>
+            <div class="works__text-block">
+              <h2>訓練受講希望者用フライヤー</h2>
+              <p>オリジナルフライヤー</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="morris-flyer02" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">訓練受講希望者用フライヤー</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>デザイン</dd>
+                    <dt>制作時間</dt>
+                    <dd>24H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-illustrator_icon.png" alt="illustratorアイコン">
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    他の訓練受講希望者用フライヤーを差別化を図り、目につきやすいデザインを意識しました。<br>
+                    そのためにメインビジュアルに燃える人物を配置し、チャレンジ精神を全面に表現しています。
+                  </p>
+                </div><!-- /.text__container -->
+                <div class="flyers">
+                  <p>表面</p>
+                  <img src="images/works/morris_flyer02_front.jpg" alt="A4フライヤー02（表）" class="mb-sm">
+                  <p>裏面</p>
+                  <img src="images/works/morris_flyer02_back.jpg" alt="A4フライヤー02（裏）">
+                </div><!-- /.flyers -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+        </ul>
+
+        <!-- 画像編集 -->
+        <ul class="works__inner">
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="Burning_man">
+              <img src="images/works/Burning_man.jpg" alt="燃える男">
+            </div>
+            <div class="works__text-block">
+              <h2>Burning Man</h2>
+              <p>画像加工</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="Burning_man" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">Burning Man</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>画像加工</dd>
+                    <dt>制作時間</dt>
+                    <dd>5H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    燃える闘争心をコンセプトに作成しました。<br>
+                    パンツの部分を違和感なく隠すこと、炎や白煙を出来るだけ自然に表現する為に何度も試行錯誤しました。
+                  </p>
+                  <p>
+                    ■ 気づき/反省点<br>
+                    複数枚の画像を組み合わせて作成したので、レイヤーの扱いやアピアランス、フィルタの使い方を学習出来ました。<br>
+                    白煙はブラシで表現しています。
+                  </p>
+                </div><!-- /.text__container -->
+                <div class="photos">
+                  <p>編集前</p>
+                  <img src="images/works/man-before.jpg" alt="画像加工前" class="w-100 mb-sm">
+                  <p>編集後</p>
+                  <img src="images/works/man-after.jpg" alt="画像加工後" class="w-100">
+                </div><!-- /.photos -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+
+          <li class="works__contents">
+            <div class="works__img" data-remodal-target="girl">
+              <img src="images/works/girl.webp" alt="女性">
+            </div>
+            <div class="works__text-block">
+              <h2>Girl</h2>
+              <p>画像切り抜き</p>
+            </div>
+            <div class="remodal modal-window" data-remodal-id="girl" data-remodal-options="hashTracking: false">
+              <button data-remodal-action="close" class="remodal-close"></button>
+              <div class="modal-window__inner">
+                <div class="text__container">
+                  <h2 class="mb-sm">Girl</h2>
+                  <dl class="mb-sm">
+                    <dt>作業内容</dt>
+                    <dd>画像切り抜き</dd>
+                    <dt>制作時間</dt>
+                    <dd>0.5H</dd>
+                    <dt>使用ソフト</dt>
+                    <dd>
+                      <img src="images/adobe-photoshop_icon.png" alt="photoshopアイコン">
+                    </dd>
+                    <dt>備考</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <p>
+                    ■ コンセプト/イメージ<br>
+                    髪の毛の切り抜きを練習したかったので、この画像を選択しました。<br>
+                    境界線調整ブラシやグローバル調整を駆使し、今後もっと精度を上げていきたいと思います。
+                  </p>
+                </div><!-- /.text__container -->
+                <div class="photos">
+                  <p>編集前</p>
+                  <img src="images/works/girl_before.webp" alt="画像加工前" class="w-100 mb-sm">
+                  <p>編集後</p>
+                  <img src="images/works/girl_after.webp" alt="画像加工後" class="w-100">
+                </div><!-- /.photos -->
+              </div><!-- /.modal-window__inner -->
+            </div><!-- /.modal-window -->
+          </li>
+        </ul>
+
+        <div class="works__container__text">
+          <a href="#works">▲ メニューに戻る</a>
+        </div>
+      </div><!-- /.works__container -->
+    </div><!-- /.works__tab-works -->
+  </div><!-- /#works -->
+
+  <footer class="footer">
+    <p><small>&copy; 2022 DAICHI FUKUI</small></p>
+  </footer>
+
+</body>
+</html>

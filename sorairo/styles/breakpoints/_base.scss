@@ -1,0 +1,630 @@
+@use "../modules/variables" as var;
+
+body {
+  list-style: none;
+
+  &.noscroll  {
+    overflow: hidden;
+  }
+}
+
+#splash-logo {
+  font-size: 2vw;
+}
+
+.side-text {
+  position: absolute;
+  top: 5vw;
+  left: 12vw;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  color: var.$cBlack;
+  opacity: .5;
+  font-size: 8vw;
+  letter-spacing: 1vw;
+  font-weight: bold;
+}
+
+.header {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  background-color: var.$cWhite;
+  z-index: 100;
+
+  &__mobile {
+    display: none;
+  }
+
+  &__nav {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > a {
+      width: 11.9445vw;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    text-align: center;
+  }
+
+  &__li {
+    width: 8vw;
+    
+    & > a {
+      display: block;
+      height: 5.97225vw;
+      padding: 20% 0;
+      font-size: 1.3vw;
+
+      & > span {
+        display: block;
+        margin-top: 0.3vw;
+        font-size: .9vw;
+      }
+    }
+
+    &:last-of-type {
+      background-color: var.$cAccent;
+      color: var.$cWhite;
+    }
+  }
+}
+
+main {
+  padding-top: 5.97225vw;
+}
+
+.top {
+  position: relative;
+  height: 90vh;
+  background-size: cover;
+  background-position: center center;
+
+  &::before {
+    content: '';
+    /* ↓暗いオーバーレイを半透明で配置 */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* ↓全体を覆うように配置 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    text-align: center;
+  }
+
+  &__title {
+    color: var.$cWhite;
+    font-size: 6vw;
+    line-height: 7vw;
+    font-style: italic;
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.16);
+    margin-bottom: 3vw;
+
+    & > span {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  &__sub-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & > dl {
+      width: 48%;
+      display: flex;
+      margin-bottom: 1vw;
+
+      & > dt {
+        width: 25%;
+        padding: 0.85vw;
+        font-size: 1.2vw;
+        color: var.$cWhite;
+        background-color: rgba(64, 64, 64, 0.8);
+      }
+
+      & > dd {
+        width: 75%;
+        padding: 0.85vw;
+        font-size: 1.1vw;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+
+.works {
+  position: relative;
+  background-color: var.$cMain;
+
+  & .side-text {
+    color: var.$cWhite;
+  }
+  
+  &__inner {
+    padding: 5vw 15vw;
+  }
+
+  &__title {
+    color: var.$cWhite;
+    border-bottom: 0.2vw solid;
+    display: inline-block;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+
+    & > span {
+      margin-left: 2vw;
+      font-size: 1.3vw;
+    }
+  }
+
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 6.95vw;
+
+    & figure {
+      position: relative;
+      width: 34vw;
+      margin-bottom: 4vw;
+
+      &:nth-last-of-type(-n+2) {
+        margin-bottom: 1.5vw;
+      }
+
+      & > img {
+        width: 100%;
+      }
+
+      & figcaption {
+        width: 70%;
+        padding: 1vw 1.2vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: -1.5vw;
+        background-color: white;
+
+        &::before {
+          content: "";
+          width: 4vw;
+          border-top: solid 0.2vw #000;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 1vw;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    border: var.$cWhite solid 0.2vw;
+    width: 33vw;
+    text-align: center;
+    color: var.$cWhite;
+    padding: 1.2vw 0;
+    font-size: 1.5vw;
+    letter-spacing: 0.2vw;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.service {
+  position: relative;
+  background-color: var.$cBase;
+  
+  &__inner {
+    padding: 5vw 15vw;
+  }
+
+  &__title {
+    color: var.$cWhite;
+    border-bottom: 0.2vw solid;
+    display: inline-block;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+
+    & > span {
+      margin-left: 2vw;
+      font-size: 1.3vw;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__li {
+    width: 33%;
+    padding: 3.5vw 2vw;
+    margin: 0.1vw;
+    background-color: var.$cWhite;
+    text-align: center;
+
+    & .icons {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      font-size: 4vw;
+      margin-bottom: 1.5vw;
+    }
+
+    & .title {
+      font-size: 1.5vw;
+      margin-bottom: 1.5vw;
+    }
+
+    & .text {
+      font-size: 1.3vw;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}
+
+.users {
+  position: relative;
+  
+  &__inner {
+    padding: 5vw 15vw;
+  }
+
+  &__title {
+    border-bottom: 0.2vw solid;
+    display: inline-block;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+
+    & > span {
+      margin-left: 2vw;
+      font-size: 1.3vw;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__li {
+    width: 32%;
+    border: var.$cBlack solid .1vw;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__texts {
+    padding: 2vw 1.5vw;
+    text-align: center;
+
+    &__title {
+      font-size: 1.95vw;
+      margin-bottom: 2vw;
+    }
+
+    &__text {
+      display: inline-block;
+      text-align: left;
+      line-height: 2.1vw;
+      font-size: 1.4vw;
+      margin-bottom: 2vw;
+    }
+
+    &__company {
+      display: flex;
+      align-items: center;
+      font-size: 1.7vw;
+
+      & > i {
+        font-size: 3vw;
+        margin-right: 2vw;
+      }
+    }
+  }
+}
+
+.faq {
+  position: relative;
+  background-color: var.$cBase;
+
+  &__inner {
+    padding: 5vw 15vw;
+  }
+
+  &__title {
+    color: var.$cWhite;
+    border-bottom: 0.2vw solid;
+    display: inline-block;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+
+    & > span {
+      margin-left: 2vw;
+      font-size: 1.3vw;
+    }
+  }
+
+  &__questions {
+    
+    & > dl {
+      background-color: var.$cWhite;
+      padding: 2vw 5vw;
+      margin-bottom: 2vw;
+      font-size: 1.2vw;
+      font-weight: bold;
+      line-height: 2.5vw;
+      letter-spacing: 0.2vw;
+
+      & > dt {
+        border-bottom: solid 0.1vw #000;
+        padding-left: 5vw;
+        margin-bottom: 1vw;
+
+        &::before {
+          content: "Q";
+          color: var.$cBase;
+          font-size: 2vw;
+          display: inline-block;
+          padding-bottom: 1vw;
+          text-indent: -4vw;
+        }
+      }
+
+      & > dd {
+        padding-left: 5vw;
+
+        &::before {
+          content: 'A';
+          font-size: 2vw;
+          display: inline-block;
+          text-indent: -4vw;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  position: relative;
+
+  &__inner {
+    padding: 5vw 15vw;
+  }
+
+  &__title {
+    border-bottom: 0.2vw solid;
+    display: inline-block;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+
+    & > span {
+      margin-left: 2vw;
+      font-size: 1.3vw;
+    }
+  }
+
+  &__tel {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4vw;
+
+    & .sub-title {
+      font-size: 2vw;
+      margin-bottom: 1vw;
+    }
+
+    &__contents {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+
+      & > i {
+        font-size: 3.5vw;
+      }
+    }
+
+    & .text {
+      padding-left: 2vw;
+
+      & > p {
+        font-size: 1.7vw;
+        margin-bottom: 0.5vw;
+
+        & > span {
+          font-size: 2.5vw;
+          letter-spacing: 0.25vw;
+          color: #DE0000;
+        }
+      }
+    }
+
+    & > small {
+      font-size: 1.3vw;
+    }
+  }
+
+  &__mail {
+
+    & .sub-title {
+      font-size: 2vw;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2vw;
+    }
+
+    & table {
+      width: 100%;
+      border: 0.1vw solid rgba(0, 0, 0, 0.1);
+      margin-bottom: 3vw;
+    }
+
+    & tr {
+      font-size: 1.3vw;
+      border: 0.1vw solid rgba(0, 0, 0, 0.1);
+    }
+
+    & th {
+      width: 35%;
+      padding: 2%;
+      vertical-align: middle;
+      background-color: #F0F0F0;
+
+      & span {
+        background-color: var.$cAccent;
+        color: var.$cWhite;
+        padding: 0.5vw;
+        margin-left: 2vw;
+      }
+    }
+
+    & td {
+      width: 65%;
+      padding: 2%;
+
+      & select {
+        background-color: #F7F7F7;
+        width: 50%;
+        height: 100%;
+        padding: 2%;
+        appearance: auto;
+
+        & option {
+          font-size: 1vw;
+        }
+      }
+
+      & .period {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__inner {
+          width: 33.2%;
+          margin-bottom: 3%;
+
+          &:nth-last-of-type(-n+2) {
+            margin-bottom: 0;
+          }
+        }
+
+        &__text {
+          margin-left: 5%;
+        }
+      }
+
+      & textarea {
+        background-color: #F7F7F7;
+        width: 100%;
+        height: 25vw;
+        padding: 2%;
+        resize: none;
+      }
+
+      & input {
+        background-color: #F7F7F7;
+        width: 70%;
+        height: 100%;
+        padding: 2%;
+
+        &[type="email"] {
+          width: 90%;
+        }
+
+        &[type="radio"] {
+          width: auto;
+        }
+
+        &[type="file"] {
+          width: auto;
+          background-color: transparent;
+        }
+      }
+    }
+
+    & .submit-btn {
+      background-color: var.$cAccent;
+      color: var.$cWhite;
+      width: 30%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 2vw;
+
+      & > input {
+        width: 100%;
+        padding: 1.5vw;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: var.$cMain;
+  color: var.$cWhite;
+  padding: 8vw 5vw;
+  display: flex;
+  justify-content: space-between;
+
+  &__about {
+    width: 40%;
+
+    & > p {
+      font-size: 1.5vw;
+      margin-bottom: 1vw;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    border-bottom: 0.2vw solid;
+    display: inline-block;
+    padding-bottom: 0.2vw;
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+
+    & > span {
+      margin-left: 2vw;
+      font-size: 1.3vw;
+    }
+  }
+
+  & .gmap {
+    width: 50%;
+    height: 400px;
+  }
+}

@@ -1,0 +1,251 @@
+@use "../modules/variables" as var;
+body {
+  background-color: var.$cBg;
+  font-family: sans-serif, "Hiragino Sans";
+}
+
+.mb-sm {
+  margin-bottom: 15px;
+}
+
+.mb-sp {
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 190px;
+  height: 40px;
+  background-color: #ffa850;
+  border-radius: 15px;
+  font-size: 18px;
+  color: var.$cWhite;
+  text-align: center;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 50%);
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: none;
+    transform: scale(0.99, 0.99) translateY(2px);
+  }
+}
+
+.main-visual {
+  width: 100vw;
+  height: 320px;
+  position: relative;
+  background-image: url(../images/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+
+  &__title {
+    color: var.$cWhite;
+    text-shadow:0 0 5px var.$cBlack;
+    font-family: var.$subFontfamily;
+  }
+
+  &__text-beside {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    font-size: 25px;
+  }
+
+  &__text-vertical {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    font-size: 30px;
+    letter-spacing: 7px;
+    writing-mode: vertical-rl;
+  }
+
+  &__banner {
+    position: absolute;
+    top: 280px;
+    left: 25px;
+    width: 106px;
+    height: 42px;
+  }
+}
+
+.main-contents {
+  display: flex;
+  align-items: flex-end;
+  @extend .mb-sp;
+
+  &__texts {
+    width: 40%;
+    margin-left: 25px;
+
+    & p:first-of-type {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    & p:last-of-type {
+      font-family: var.$subFontfamily;
+      font-size: 30px;
+      color: red;
+    }
+  }
+
+  &__btn {
+    width: 55%;
+  }
+}
+
+.thought {
+  background-image: url(../images/background.png);
+  padding: 30px 30px;
+
+  &__title {
+    font-family: var.$subFontfamily;
+    font-size: 25px;
+    color: var.$cWhite;
+    text-align: center;
+    border-bottom: 2px dotted var.$cWhite;
+    @extend .mb-sm;
+  }
+
+  &__contents {
+    text-align: center;
+
+    & > img {
+      width: 70%;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    @extend .mb-sm;
+  }
+}
+
+.vegetables {
+  &__inner {
+    padding: 30px;
+    @extend .mb-sm;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: var.$subFontfamily;
+    font-size: 25px;
+    @extend .mb-sm;
+  }
+
+  &__vegetable {
+    display: flex;
+    flex-wrap: wrap;
+    @extend .mb-sm;
+
+    & > li {
+      width: 33.3333333%;
+      padding: 10px;
+
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__remarks {
+    font-family: var.$subFontfamily;
+    font-size: 25px;
+  }
+
+  & .recipebook {
+    height: 80px;
+    background-image: url(../images/background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  
+    &__text {
+      padding: 0 10px;
+      line-height: 22px;
+    }
+  
+    & > img {
+      width: 130px;
+      height: 152px;
+    }
+  }
+
+  .vegetables__btn {
+    text-align: center;
+    @extend .mb-sp;
+  }
+}
+
+.customers {
+  background-color: #F0E68C;
+  width: 90%;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+
+  &__inner {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: var.$subFontfamily;
+    font-size: 20px;
+    @extend .mb-sp;
+  }
+
+  &__content {
+    @extend .mb-sp;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & > img {
+      width: 72%;
+      padding: 8px;
+      background: var.$cWhite;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #c2c2c2;
+      border-right: 1px solid #c2c2c2;
+    }
+  }
+
+  &__detail {
+    width: 72%;
+    font-size: 18px;
+    margin: 0 auto 10px;
+    text-align: left;
+    border-bottom: 2px dotted;
+  }
+
+  &__text {
+    width: 72%;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 auto 10px;
+    text-align: left;
+  }
+}
+
+.footer {
+  background-image: url(../images/background.png);
+  text-align: center;
+  padding: 20px 0;
+
+  &__text {
+    color: red;
+    font-family: var.$subFontfamily;
+    font-size: 20px;
+    line-height: 30px;
+    @extend .mb-sm;
+  }
+}
+

@@ -1,0 +1,264 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+#top-img {
+  height: 80vh;
+  width: 100vw;
+  background-image: url(../images/main-img.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top-img img {
+  height: 60vh;
+}
+
+#header, #footer {
+  height: 20vh;
+}
+#header nav ul, #footer nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+#header nav ul li, #footer nav ul li {
+  width: 33.3333333vw;
+  padding: 5vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+#header nav ul li:nth-of-type(2), #footer nav ul li:nth-of-type(2) {
+  border-width: 0 3px;
+  border-style: dotted;
+  border-color: #81D3E2;
+}
+#header nav ul li img, #footer nav ul li img {
+  width: 15vw;
+}
+
+#header {
+  margin: 3vh 0;
+}
+
+.wrapper {
+  max-width: 1024px;
+  display: flex;
+  margin: 100px auto 0;
+}
+.wrapper:last-of-type {
+  margin-bottom: 100px;
+}
+.wrapper .content {
+  width: 524px;
+}
+.wrapper .content .content-inner {
+  height: 100%;
+  padding: 25px 24px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.wrapper .content .content-inner p {
+  font-size: 1.9rem;
+  line-height: 4rem;
+  margin: 50px 0;
+}
+.wrapper .content img:first-of-type {
+  width: 15vw;
+}
+.wrapper .c-img {
+  width: 500px;
+  height: 500px;
+}
+
+/* =====ボタン===== */
+.btn {
+  height: 60px;
+  width: 255px;
+  /*影の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  border-radius: 10px;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all 0.4s ease;
+  /*hoverをした後のボタンの形状*/
+  /*ボタンの中のテキスト*/
+}
+.btn:hover {
+  border-color: transparent;
+}
+.btn span {
+  height: 100%;
+  width: 100%;
+  font-size: 2.3rem;
+  position: relative;
+  z-index: 2; /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  /*テキストの形状*/
+  display: block;
+  padding: 15px 0;
+  background: #81D3E2;
+  border-radius: 10px;
+  color: #fff;
+  /*アニメーションの指定*/
+  transition: all 0.3s ease;
+}
+
+/*== 下に押し込まれる（立体が平面に） */
+/*影の設定*/
+.pushdown {
+  /*hoverの際にY軸に4pxずらす*/
+}
+.pushdown:before {
+  content: "";
+  /*絶対配置で影の位置を決める*/
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  left: 0;
+  /*影の形状*/
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #666;
+}
+.pushdown:hover span {
+  background-color: #6495ed;
+  color: #fff;
+  transform: translateY(4px);
+}
+
+/* ここからfadeアニメーション */
+.fadeRight {
+  -webkit-animation-name: fadeRightAnime;
+          animation-name: fadeRightAnime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeLeft {
+  -webkit-animation-name: fadeLeftAnime;
+          animation-name: fadeLeftAnime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* スクロールをしたら出現する要素にはじめに透過0を指定 */
+.fadeRightTrigger, .fadeLeftTrigger {
+  opacity: 0;
+}
+
+/* ==========モバイル用========== */
+@media screen and (max-width: 480px) {
+  #header, #footer {
+    height: auto;
+  }
+  #header nav ul li, #footer nav ul li {
+    padding: 3vh;
+  }
+  #header nav ul li img, #footer nav ul li img {
+    width: 22vw;
+  }
+  #footer {
+    margin-top: 3vh;
+  }
+  .wrapper {
+    margin: 50px auto 0;
+    flex-wrap: wrap;
+  }
+  .wrapper:first-of-type {
+    margin: 0 auto 0;
+  }
+  .wrapper .c-img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .content {
+    width: auto;
+  }
+  .wrapper .content .content-inner p {
+    font-size: 1.36rem;
+    line-height: 3.8rem;
+    margin: 35px 0;
+  }
+  .wrapper .content .content-inner img:first-of-type {
+    width: 22vw;
+  }
+  .wrapper:last-of-type {
+    margin-bottom: 50px;
+  }
+  #kyoto {
+    flex-direction: column-reverse;
+  }
+  #top-img {
+    background-image: url(../images/main-img-sp.png);
+    width: 100%;
+  }
+  #top-img img {
+    height: 40vh;
+  }
+  .btn {
+    height: 50px;
+    width: 230px;
+  }
+  .btn span {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

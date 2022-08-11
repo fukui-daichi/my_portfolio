@@ -1,0 +1,208 @@
+@media (min-width: 480px) {
+
+  .contents-width {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 350px;
+    height: 65px;
+    font-size: 32px;
+  }
+
+  .mb-md {
+    margin-bottom: 50px;
+  }
+
+  .main-visual {
+    height: 670px;
+    @extend .contents-width;
+
+    &__text-beside {
+      font-size: 50px;
+      top: 40px;
+      left: 40px;
+    }
+
+    &__text-vertical {
+      font-size: 55px;
+      letter-spacing: 12px;
+      top: 90px;
+      right: 40px;
+    }
+
+    &__banner {
+      top: 570px;
+      left: 100px;
+      width: 182px;
+      height: 73px;
+    }
+  }
+
+  .main-contents {
+    @extend .contents-width;
+    @extend .mb-md;
+
+    &__texts {
+      margin-left: 100px;
+
+      & p {
+        &:first-of-type {
+          font-size: 25px;
+        }
+        &:last-of-type {
+          font-size: 60px;
+        }
+      }
+    }
+
+    &__btn {
+      text-align: center;
+    }
+  }
+
+  .thought {
+
+    &__inner {
+      @extend .contents-width;
+      padding: 0 60px;
+    }
+
+    &__title {
+      font-size: 45px;
+      width: 65%;
+      padding-bottom: 5px;
+      border-bottom: 3px dotted white;
+    }
+
+    &__contents {
+      display: flex;
+      align-items: center;
+
+      & > img {
+        width: 40%;
+      }
+    }
+
+    &__text {
+      font-size: 25PX;
+      line-height: 40px;
+      width: 60%;
+    }
+  }
+
+  .vegetables {
+    @extend .contents-width;
+
+    &__inner {
+      padding: 50px;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+
+      &:before, &:after {
+        border-top: 1px solid;
+        content: "";
+        width: 150px;
+      }
+      &:before {
+        margin-right: 10px;
+      }
+      &:after {
+        margin-left: 10px;
+      }
+    }
+
+    &__vegetable {
+      justify-content: center;
+
+      & > li {
+        width: 20%;
+      }
+    }
+
+    &__remarks {
+      font-size: 40px;
+    }
+
+    & .recipebook {
+      width: 100vw;
+      height: 200px;
+      margin-left: calc(50% - 50vw);
+      margin-bottom: 80px;
+
+      & > img {
+        width: 292px;
+        height: 327px;
+        margin-left: 50px;
+      }
+
+      &__text {
+        line-height: 60px;
+        font-size: 35px;
+        padding: 0;
+      }
+    }
+  }
+
+  .customers {
+    max-width: 960px;
+    @extend .mb-md;
+
+    &__inner {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 85%;
+      margin: 0 auto 30px;
+      align-items: center;
+      justify-content: space-between;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      & > img {
+        width: 260px;
+      }
+    }
+
+    &__texts {
+      width: 72%;
+    }
+
+    &__detail {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 27px;
+    }
+  }
+
+  .footer {
+    padding: 30px 0;
+
+    &__text {
+      font-size: 35px;
+      line-height: 52px;
+      margin-bottom: 30px;
+    }
+  }
+}

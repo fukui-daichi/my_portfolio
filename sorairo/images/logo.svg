@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 344 160" style="enable-background:new 0 0 344 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#666666;stroke-width:2;stroke-linecap:square;stroke-miterlimit:8;}
+	.st1{fill:url(#SVGID_1_);stroke:#666666;stroke-width:2;stroke-linecap:square;stroke-miterlimit:8;}
+	.st2{fill:#3FA9F5;}
+	.st3{fill:#666666;}
+</style>
+<path class="st0" d="M10.3,22.7c-3-3-3-8,0-11c3-3,8-3,11,0l5.5,5.5L40.5,3.5l13.8,13.8l5.5-5.5c3-3,8-3,11,0c3,3,3,8,0,11l-5.5,5.5
+	L79.1,42L65.3,55.7l-5.5-5.5c-3-3-8-3-11,0c-3,3-3,8,0,11l5.5,5.5L40.5,80.5L26.8,66.7l5.5-5.5c3-3,3-8,0-11c-3-3-8-3-11,0l-5.5,5.5
+	L2,42l13.8-13.8L10.3,22.7z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.3757" y1="45.3959" x2="102.4286" y2="92.6979">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#3FA9F5"/>
+</linearGradient>
+<path class="st1" d="M48.9,61.3c-3-3-3-8,0-11c3-3,8-3,11,0l5.5,5.5l13.8-13.8L93,55.8l5.5-5.5c3-3,8-3,11,0s3,8,0,11l-5.5,5.5
+	l13.8,13.8L104,94.4l-5.5-5.5c-3-3-8-3-11,0c-3,3-3,8,0,11l5.5,5.5l-13.8,13.8l-13.8-13.8l5.5-5.5c3-3,3-8,0-11c-3-3-8-3-11,0
+	l-5.5,5.5L40.7,80.6l13.8-13.8L48.9,61.3z"/>
+<path class="st0" d="M9.9,100.3c-3-3-3-8,0-11c3-3,8-3,11,0l5.5,5.5l13.8-13.8L54,94.8l5.5-5.5c3-3,8-3,11,0c3,3,3,8,0,11l-5.5,5.5
+	l13.8,13.8L65,133.4l-5.5-5.5c-3-3-8-3-11,0c-3,3-3,8,0,11l5.5,5.5l-13.8,13.8l-13.8-13.8l5.5-5.5c3-3,3-8,0-11s-8-3-11,0l-5.5,5.5
+	L1.7,119.6l13.8-13.8L9.9,100.3z"/>
+<g>
+	<path class="st2" d="M139.2,69l-4,6.9l-14-26.4h7.6L139.2,69z M158.2,46.6h6.7V69L146,104.6h-17.6L125,98h16.9l16.3-30.6V46.6z"/>
+	<path class="st2" d="M209,104.6h-13.8l-3.5-6.6h13.3l15.2-28.7h-35v-6.6h46.1L209,104.6z M226.6,48.6v6.6h-37.3v-6.6H226.6z"/>
+</g>
+<g>
+	<path class="st3" d="M282.1,53.5h-13.8l-21,39.6h-7l-3.5-6.6h6.4l21-39.6h17.8V53.5z M260.1,107.8V69.7h6.7v38.1H260.1z"/>
+	<path class="st3" d="M344.2,85l-10.6,19.9h-31.2V51.2h41.8V85z M329.7,98.3l7.8-14.9V57.8H309v40.6H329.7z"/>
+</g>
+</svg>

@@ -1,0 +1,364 @@
+body {
+  background-color: #FFFAF0;
+  font-family: sans-serif, "Hiragino Sans";
+}
+
+.mb-sm, .footer__text, .vegetables__vegetable, .vegetables__title, .vegetables__inner, .thought__text, .thought__title {
+  margin-bottom: 15px;
+}
+
+.mb-sp, .customers__content, .customers__title, .vegetables .vegetables__btn, .main-contents {
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 190px;
+  height: 40px;
+  background-color: #ffa850;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+}
+.btn:hover {
+  box-shadow: none;
+  transform: scale(0.99, 0.99) translateY(2px);
+}
+
+.main-visual {
+  width: 100vw;
+  height: 320px;
+  position: relative;
+  background-image: url(../images/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+.main-visual__title {
+  color: white;
+  text-shadow: 0 0 5px black;
+  font-family: serif, YuMincho;
+}
+.main-visual__text-beside {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  font-size: 25px;
+}
+.main-visual__text-vertical {
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  font-size: 30px;
+  letter-spacing: 7px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+.main-visual__banner {
+  position: absolute;
+  top: 280px;
+  left: 25px;
+  width: 106px;
+  height: 42px;
+}
+
+.main-contents {
+  display: flex;
+  align-items: flex-end;
+}
+.main-contents__texts {
+  width: 40%;
+  margin-left: 25px;
+}
+.main-contents__texts p:first-of-type {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.main-contents__texts p:last-of-type {
+  font-family: serif, YuMincho;
+  font-size: 30px;
+  color: red;
+}
+.main-contents__btn {
+  width: 55%;
+}
+
+.thought {
+  background-image: url(../images/background.png);
+  padding: 30px 30px;
+}
+.thought__title {
+  font-family: serif, YuMincho;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border-bottom: 2px dotted white;
+}
+.thought__contents {
+  text-align: center;
+}
+.thought__contents > img {
+  width: 70%;
+}
+.thought__text {
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.vegetables__inner {
+  padding: 30px;
+  text-align: center;
+}
+.vegetables__title {
+  font-family: serif, YuMincho;
+  font-size: 25px;
+}
+.vegetables__vegetable {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vegetables__vegetable > li {
+  width: 33.3333333%;
+  padding: 10px;
+}
+.vegetables__vegetable > li > img {
+  width: 100%;
+}
+.vegetables__remarks {
+  font-family: serif, YuMincho;
+  font-size: 25px;
+}
+.vegetables .recipebook {
+  height: 80px;
+  background-image: url(../images/background.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.vegetables .recipebook__text {
+  padding: 0 10px;
+  line-height: 22px;
+}
+.vegetables .recipebook > img {
+  width: 130px;
+  height: 152px;
+}
+.vegetables .vegetables__btn {
+  text-align: center;
+}
+
+.customers {
+  background-color: #F0E68C;
+  width: 90%;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+.customers__inner {
+  padding: 30px 0;
+  text-align: center;
+}
+.customers__title {
+  font-family: serif, YuMincho;
+  font-size: 20px;
+}
+.customers__content:last-of-type {
+  margin-bottom: 0;
+}
+.customers__content > img {
+  width: 72%;
+  padding: 8px;
+  background: white;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+}
+.customers__detail {
+  width: 72%;
+  font-size: 18px;
+  margin: 0 auto 10px;
+  text-align: left;
+  border-bottom: 2px dotted;
+}
+.customers__text {
+  width: 72%;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto 10px;
+  text-align: left;
+}
+
+.footer {
+  background-image: url(../images/background.png);
+  text-align: center;
+  padding: 20px 0;
+}
+.footer__text {
+  color: red;
+  font-family: serif, YuMincho;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (min-width: 480px) {
+  .contents-width, .vegetables, .thought__inner, .main-contents, .main-visual {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 350px;
+    height: 65px;
+    font-size: 32px;
+  }
+  .mb-md, .customers, .main-contents {
+    margin-bottom: 50px;
+  }
+  .main-visual {
+    height: 670px;
+  }
+  .main-visual__text-beside {
+    font-size: 50px;
+    top: 40px;
+    left: 40px;
+  }
+  .main-visual__text-vertical {
+    font-size: 55px;
+    letter-spacing: 12px;
+    top: 90px;
+    right: 40px;
+  }
+  .main-visual__banner {
+    top: 570px;
+    left: 100px;
+    width: 182px;
+    height: 73px;
+  }
+  .main-contents__texts {
+    margin-left: 100px;
+  }
+  .main-contents__texts p:first-of-type {
+    font-size: 25px;
+  }
+  .main-contents__texts p:last-of-type {
+    font-size: 60px;
+  }
+  .main-contents__btn {
+    text-align: center;
+  }
+  .thought__inner {
+    padding: 0 60px;
+  }
+  .thought__title {
+    font-size: 45px;
+    width: 65%;
+    padding-bottom: 5px;
+    border-bottom: 3px dotted white;
+  }
+  .thought__contents {
+    display: flex;
+    align-items: center;
+  }
+  .thought__contents > img {
+    width: 40%;
+  }
+  .thought__text {
+    font-size: 25PX;
+    line-height: 40px;
+    width: 60%;
+  }
+  .vegetables__inner {
+    padding: 50px;
+    margin-bottom: 30px;
+  }
+  .vegetables__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .vegetables__title:before, .vegetables__title:after {
+    border-top: 1px solid;
+    content: "";
+    width: 150px;
+  }
+  .vegetables__title:before {
+    margin-right: 10px;
+  }
+  .vegetables__title:after {
+    margin-left: 10px;
+  }
+  .vegetables__vegetable {
+    justify-content: center;
+  }
+  .vegetables__vegetable > li {
+    width: 20%;
+  }
+  .vegetables__remarks {
+    font-size: 40px;
+  }
+  .vegetables .recipebook {
+    width: 100vw;
+    height: 200px;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 80px;
+  }
+  .vegetables .recipebook > img {
+    width: 292px;
+    height: 327px;
+    margin-left: 50px;
+  }
+  .vegetables .recipebook__text {
+    line-height: 60px;
+    font-size: 35px;
+    padding: 0;
+  }
+  .customers {
+    max-width: 960px;
+  }
+  .customers__inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .customers__title {
+    font-size: 45px;
+  }
+  .customers__content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+    margin: 0 auto 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .customers__content:last-of-type {
+    margin-bottom: 0;
+  }
+  .customers__content > img {
+    width: 260px;
+  }
+  .customers__texts {
+    width: 72%;
+  }
+  .customers__detail {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .customers__text {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__text {
+    font-size: 35px;
+    line-height: 52px;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

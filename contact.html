@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" id="favicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/> <!-- reset.css destyle -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <title>福井大地 | DAICHI FUKUI</title>
+</head>
+
+<body class="appear">
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html"><img src="images/fukui.svg" alt="ロゴ画像"></a>
+      <div class="header__openbtn"><span></span><span></span><span></span></div> <!-- ハンバーガーメニュー -->
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <a href="index.html#about"><li class="header__li about-sp">ABOUT</li></a>
+          <a href="index.html#works"><li class="header__li works-sp">WORKS</li></a>
+          <a href="contact.html"><li class="header__li">CONTACT</li></a>
+        </ul>
+      </nav>
+    </div><!-- /.header__inner -->
+  </header>
+
+  <section id="contact" class="contact">
+    <div class="contact__contact-box">
+      <div class="contact__contact-box__contact-links">
+        <h2>CONTACT</h2>
+        <!-- <div class="links">
+          <div class="link">
+            <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+          </div>
+        </div> -->
+      </div>
+      <div class="contact__contact-box__contact-form-wrapper">
+        <form action="http://daichifukui.php.xdomain.jp/mail.php" method="post">
+          <div class="form-item">
+            <input type="text" name="name" required>
+            <label>Name :</label>
+          </div>
+          <div class="form-item">
+            <input type="email" name="mail" required>
+            <label>Email :</label>
+          </div>
+          <div class="form-item">
+            <textarea class="" name="message" required></textarea>
+            <label>Message :</label>
+          </div>
+          <div class="mail-radio">
+            <span>Reply :</span>
+            <label><input type="radio" name="re" value="yes"> Yes</label>
+            <label><input type="radio" name="re" value="no" checked> No</label>
+          </div>
+          <button class="submit-btn">Send</button>  
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><small>&copy; 2022 DAICHI FUKUI</small></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> <!-- Easing拡張プラグイン -->
+  <!-- <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/js/4-14.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script> <!-- モーダルウィンドウプラグイン -->
+
+  <!-- 3Dアニメーション描画 -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/shree/dist/shree.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script> -->
+  <!-- <script src="js/vanta.js"></script> -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

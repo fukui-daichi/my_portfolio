@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/><!-- reset.css destyle -->
+  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+  <title>-夏めぐり-</title>
+</head>
+<body>
+
+  <div id="splash">
+    <div id="splash_text"></div>
+  </div>
+
+  <div id="top-img">
+    <img src="images/logo.svg" alt="ロゴ" class="logo">
+  </div><!-- #top-img -->
+  <header id="header">
+    <nav>
+      <ul id="page-link">
+        <li><a href="#nara"><img src="images/nara.svg" alt="奈良"></a></li>
+        <li><a href="#kyoto"><img src="images/kyoto.svg" alt="京都"></a></li>
+        <li><a href="#kobe"><img src="images/kobe.svg" alt="神戸"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="nara" class="wrapper">
+      <div class="content">
+        <div class="content-inner">
+          <img src="images/nara.svg" alt="奈良">
+          <img src="images/nami.png" alt="波模様">
+          <p>
+            かわいい鹿やたくさんの寺社で知られる奈良県。<br>
+            近年は「かき氷の町」としても注目を集めています。<br>
+            話題のかき氷店や今だけのイベントなど、<br>
+            新しい奈良の魅力に触れてみませんか？
+          </p>
+          <button class="btn pushdown"><span>詳細をみる</span></button>
+        </div> 
+      </div>
+      <img src="images/img01.png" alt="奈良観光" class="c-img fadeRightTrigger">
+    </section><!-- #nara -->
+
+    <section id="kyoto" class="wrapper">
+      <img src="images/img02.png" alt="京都観光" class="c-img fadeLeftTrigger">
+      <div class="content">
+        <div class="content-inner">
+          <img src="images/kyoto.svg" alt="京都">
+          <img src="images/nami.png" alt="波模様">
+          <p>
+            ひと際暑いことで知られる京都の夏。<br>
+            緑に包まれたカフェで涼やかに過ごしたり<br>
+            浴衣に着替えて鴨川沿いを散歩してみたり…<br>
+            楽しみ方はいろいろです。
+          </p>
+          <button class="btn pushdown"><span>詳細をみる</span></button>
+        </div>
+      </div>
+    </section><!-- #kyoto -->
+
+    <section id="kobe" class="wrapper">
+      <div class="content">
+        <div class="content-inner">
+          <img src="images/kobe.svg" alt="神戸">
+          <img src="images/nami.png" alt="波模様">
+          <p>
+            おしゃれ文化を築いてきた港町、神戸。<br>
+            ラグジュアリーなスパや明石海峡大橋を望む<br>
+            サンセットクルーズなど<br>
+            大人の過ごし方が充実しています。
+          </p>
+          <button class="btn pushdown"><span>詳細をみる</span></button>
+        </div>
+      </div>
+      <img src="images/img03.png" alt="神戸観光" class="c-img fadeRightTrigger">
+    </section>
+  </main>
+  <footer id="footer">
+    <nav>
+      <ul>
+        <li><a href="#nara"><img src="images/nara.svg" alt="奈良"></a></li>
+        <li><a href="#kyoto"><img src="images/kyoto.svg" alt="京都"></a></li>
+        <li><a href="#kobe"><img src="images/kobe.svg" alt="神戸"></a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
